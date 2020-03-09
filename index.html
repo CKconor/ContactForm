@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>HTML Form</title>
+</head>
+<body>
+<div class="container">
+        <h1>Contact Us!</h1>
+        <div class="contact">
+            <form method="post" action="/submit.php" class="form" name="form">
+                <p>
+                    <label for="name" class="double">Name</label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p>
+                    <label for="date" class="double">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
+                </p>
+                <p class="full">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="full" name="email" id="email">
+                </p>
+                <p class="full">
+                    <label for="select">Contact Preference</label>
+                    <select class="full" id="contactpreference" name="contactpreference" form="contactpreference">
+                        <option value="Call">Call</option>
+                        <option value="SMS">SMS</option>
+                        <option value="Email">Email</option>
+                    </select>
+                </p>
+                <p class="full">
+                    <label for="textarea" >Message</label>
+                    <textarea name="message" id="message" rows="10"></textarea>
+                </p>
+                <p  class="full">
+                    <input id="submitbtn" type="submit">
+                </p>
+            </form>
+        </div>
+</div>
+            
+
+        
+</div>
+    
+</body>
+</html>
